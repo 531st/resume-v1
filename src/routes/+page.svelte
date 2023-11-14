@@ -1,5 +1,7 @@
 <script>
     import ScrollTop from "../components/ScrollTop.svelte";
+    import ArrowDown from "../components/ArrowDown.svelte";
+    
     import gitIcon from "../lib/assets/icons/git.png"
     import tgIcon from "../lib/assets/icons/telegram.png"
     import mailIcon from "../lib/assets/icons/gmail.png"
@@ -23,34 +25,47 @@
                 Graduated from St. Petersburgs Petrovskiy college, famous for its ahead of time IT studying practices also known as Russian MIT. 
                 Seasoned with working experience in MIA IT & cyber security structures and "P&G" SS Leader position.
             </div>
-            <img class="img" src="https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl9g0t3wf4954qtovbwtilgvi/public" alt="error">
+            <div class="img-col">
+                <img style="margin-top:1.5rem;" 
+                class="img" src="https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl9g0t3wf4954qtovbwtilgvi/public" alt="error">
+                <a href="#specializations"><ArrowDown /></a>
+            </div>
         </div>
 
-        <p class="para-header" id="specializations">Specializations</p>           
+        <p class="para-header" id="specializations" style="margin-left:3rem;">Specializations</p>           
         <div class="text-block">
-            <img class="img" src="https://external-preview.redd.it/a-cyberpunk-cat-hacker-is-surrounded-by-neon-lights-in-an-v0-b2uRHZzMMLj4U6C5b9_mWvwjJP1pvT-rSS5OaIxZR90.png?auto=webp&s=adcd979d483f549ed637f052a779e3adeaaa1088" alt="error">
+            <div class="img-col">
+                <img class="img" 
+                style="margin-left:3rem;margin-top:4rem;"
+                src="https://external-preview.redd.it/a-cyberpunk-cat-hacker-is-surrounded-by-neon-lights-in-an-v0-b2uRHZzMMLj4U6C5b9_mWvwjJP1pvT-rSS5OaIxZR90.png?auto=webp&s=adcd979d483f549ed637f052a779e3adeaaa1088" alt="error">
+                <a href="#stack"><ArrowDown /></a>
+            </div>
             <p class="text left"> 
                 Prepare to be blown away by the ultimate tech virtuoso! Behold a master of system administration, an unstoppable force in info sec and cybersec
                 , a wizard of front-end and back-end development, a maestro of network ops, a guru of server hardware, and a genius of PC software. 
-                This extraordinary individual possesses an unrivaled skill set that will leave you in awe. Experience impenetrable system security,
-                 mesmerizing website functionality, flawless network operations, and mind-blowing hardware and software solutions. 
-                Brace yourself for a tech revolution with our unparalleled expert leading the way!
+                I possess an unrivaled skill set that will leave you in awe. Experience impenetrable system security,
+                 mesmerizing website functionality, flawless network operations, and mind-blowing hardware and software solutions.
             </p>
         </div>
 
         <p class="para-header" id="stack">Stack</p>
-        <div class="text-block">
+        <div class="text-block" >
             <p class="text">    
                 <strong>Back-end:</strong> Django, flask , PostgreSQL, MySQL, SQLite<br>
                 <strong>Front-end:</strong> Svelte, and basically everything else out there, i am quick to adopt new tech!<br>
                 <strong>DevOps:</strong> Docker, Git, Teraform, AWS Kubernetes, Ansible<br>
                 <small><i>*Not everything is true at the moment of resume creation</i></small>
             </p>
-            <img class="img" src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="error">
+            <div class="img-col">
+                <img class="img" 
+                style="margin-top:4rem;"
+                src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="error">
+                <a href="#contact"><ArrowDown /></a>
+            </div>
         </div>
 
         <p class="para-header" id="contact">Contact Me</p> 
-        <div class="contact-block">
+        <div class="contact-block" style="margin-bottom:50vh;">
             <div class="contact-info">
                 <div class="contact-row">
                     <img class="icon" src={gitIcon} alt="error" href="https://github.com/531st">
@@ -72,8 +87,9 @@
 
 <style>
     .container {
-        display: flex;
-        flex-direction: column;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
         height: 100%;
     }
 
@@ -114,10 +130,12 @@
         font-size: 1.5rem;
         font-family: 'Tilt Neon', sans-serif;
         text-decoration: none;
+        transition-duration: 300ms;
     }
 
     .nav-elem:hover{
         color:#69FFB9;
+        transform: translateY(-5px);
     }
 
     .main-body{
@@ -133,15 +151,13 @@
         justify-content: space-between;
         color: white;
         font-size: 1.7vw;
-        margin-left: 5rem;
-        margin-right: 2rem;
-        width: 85vw;
-        margin-bottom: 16vh;
-        gap:30px;
+        width: 47vw;
+        margin-bottom:70vh;
     }
 
     .text {
-        width: 45vw;
+        width: 22vw;
+        font-size: 2rem;
         color: #949494;
     }
 
@@ -150,15 +166,18 @@
     }
 
     .para-header{
-        margin-left: 5rem;
         color: #69FFB9;
         font-size: 1.8vw;
+    }
+
+    .img-col{
+        display: flex;
+        flex-direction: column;
     }
 
     .img{
         height: 20rem;
         width: 20rem;
-        margin-top: 1rem;
         border-radius: 3px;
         opacity: 60%;
         box-shadow: 0 0 3px #FE00FB,

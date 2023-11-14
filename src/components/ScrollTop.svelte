@@ -42,11 +42,10 @@
       bottom: 2rem;
       cursor: pointer;
       color: #69FFB9;
-      background-color: rgb(16,16,16,1);
       border-radius: 0.15rem;
       transition-duration: 300ms;
       z-index: 999;
-          background-color: rgb(16,16,16,1);;
+          background-color: transparent;
           border: none;
           padding: 0;
     }
