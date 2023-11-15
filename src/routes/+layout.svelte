@@ -13,7 +13,6 @@
     body {
         margin: 0;
         display: block; gap: 0px;
-        overflow: hidden;
     }
 
    

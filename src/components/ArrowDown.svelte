@@ -11,7 +11,7 @@
   height: 72px;
   position: absolute;
   left: 50%;
-  margin-top:30vh;
+  margin-top:20vh;
 }
 
 .arrows path {

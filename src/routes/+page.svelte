@@ -32,11 +32,11 @@
             </div>
         </div>
 
-        <p class="para-header" id="specializations" style="margin-left:3rem;">Specializations</p>           
+        <p class="para-header" id="specializations">Specializations</p>           
         <div class="text-block">
             <div class="img-col">
                 <img class="img" 
-                style="margin-left:3rem;margin-top:4rem;"
+                style="margin-top:2.5rem;"
                 src="https://external-preview.redd.it/a-cyberpunk-cat-hacker-is-surrounded-by-neon-lights-in-an-v0-b2uRHZzMMLj4U6C5b9_mWvwjJP1pvT-rSS5OaIxZR90.png?auto=webp&s=adcd979d483f549ed637f052a779e3adeaaa1088" alt="error">
                 <a href="#stack"><ArrowDown /></a>
             </div>
@@ -58,7 +58,7 @@
             </p>
             <div class="img-col">
                 <img class="img" 
-                style="margin-top:4rem;"
+                style="margin-top:2rem;"
                 src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="error">
                 <a href="#contact"><ArrowDown /></a>
             </div>
@@ -88,7 +88,6 @@
 <style>
     .container {
         margin: auto;
-        width: 50%;
         padding: 10px;
         height: 100%;
     }
@@ -151,13 +150,16 @@
         justify-content: space-between;
         color: white;
         font-size: 1.7vw;
-        width: 47vw;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12rem;
         margin-bottom:70vh;
     }
 
     .text {
-        width: 22vw;
-        font-size: 2rem;
+        width: 35vw;
+        font-size: 1.5rem;
         color: #949494;
     }
 
@@ -168,6 +170,7 @@
     .para-header{
         color: #69FFB9;
         font-size: 1.8vw;
+        margin:auto;
     }
 
     .img-col{
